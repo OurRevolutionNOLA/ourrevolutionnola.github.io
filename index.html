@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en/US">
+	<head>
+		<title>Our Revolution NOLA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/*
+			image colors:
+				#ed4246
+				#9a2d7a
+				#639ed5
+			*/
+			.logo-splash {
+				background: url("./ornola.png");
+				background-size: contain;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				padding-bottom: 33%;
+				max-width: 640px;
+			}
+			@media (min-width: 40em) {
+				.logo-container {
+					max-width: 16em;
+				}
+				.logo-splash {
+					background-position: 0 0;
+				}
+			}
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				position: relative;
+				min-height: 100%;
+			}
+			body {
+				font-family: "Open Sans", sans-serif;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.5;
+				padding: 12px 24px;
+				color: #333;
+				margin: 0 auto 36px auto;
+				max-width: 55em;
+			}
+			p {
+				margin: 0 0 36px 0;
+			}
+			h1 {
+				font-weight: 300;
+				margin: 12px 0 0 0;
+			}
+			.fa-li {
+				color: #aaa;
+			}
+			.colophon {
+				font-size: 12px;
+				position: absolute;
+				right: 0;
+				bottom: 6px;
+				left: 0;
+				text-align: center;
+			}
+			a {
+				color: #639ed5;
+			}
+			a:active,
+			a:hover,
+			a:focus,
+			a:visited {
+				color: #3e79b1;
+			}
+			.btn {
+				text-align: center;
+				border: none;
+			}
+			.btn,
+			.btn:hover,
+			.btn:focus {
+				text-decoration: none;
+			}
+			.btn-large {
+				display: block;
+				margin: 0 auto;
+				padding: 8px 24px;
+				text-transform: uppercase;
+				font-size: 36px;
+				font-weight: 600;
+			}
+			@media (min-width: 40em) {
+				.btn-large {
+					display: inline-block;
+				}
+			}
+			.cta-container {
+				text-align: center;
+			}
+			.cta-btn {
+				background: #ed4246;
+				transform: translate(0, 0);
+			}
+			.cta-btn,
+			.cta-btn:hover,
+			.cta-btn:focus,
+			.cta-btn:active,
+			.cta-btn:visited {
+				color: #fff;
+				transition: .1s all;
+				box-shadow:
+					0 0 0 #9a2d7a inset,
+					0 0 0 #9a2d7a; 
+			}
+			.cta-btn:hover,
+			.cta-btn:focus {
+				background: #cc3a5b;
+				transform: translate(0, -6px);
+				box-shadow:
+					0 0 0 #9a2d7a inset,
+					0 6px 0 #9a2d7a;
+			}
+			.cta-btn:active {
+				background: #9a2d7a;
+				transform: translate(0, 6px);
+				box-shadow: 0 6px 12px #711e59 inset, 0 0 0 #9a2d7a;
+			}
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="logo-container">
+			<div class="logo-splash" role="presentation"></div>
+		</div>
+			<h1>Our Platform</h1>
+			<p>
+				Government at all levels today ignores the needs of the many, regardless of our ideologies or affiliations, working always and only for the very few: the privileged, the connected, the wealthy — the 1%.
+				<br><br>
+				The only thing that has ever succeeded over concentrated power is democratic power. That’s power—not gestures meant only to shame the shameless or other trifles—but the ability to actually stop and disrupt what hurts you and your family.
+				<br><br>
+				To stop families struck by illness from going bankrupt, to prevent people who work a full time job from teetering on the edge of starvation, to end the cruelties and absurdities of inequalities we all oppose that never seem to be fixed, we are building a machine for change.
+				<br><br>
+				To start to reclaim what happens to us in our own lives, not just to protect what we have already won but to ask for and get what we all need, we are going elect the grassroots locally, state-wide, and nationally.
+			</p>
+		<div class="cta-container">
+			<a class="btn btn-large cta-btn" href="https://goo.gl/forms/7GnKcGOY7iAYaYrA2" target="_blank">
+				Join Us
+			</a>
+		</div>
+		<div>
+			<h1>Contact Us</h1>
+			<ul class="fa-ul">
+				<li>
+					<i class="fa fa-li fa-envelope-o" title="Email"></i>
+					<a href="mailto:ourrevolutionnola@gmail.com">OurRevolutionNOLA@gmail.com</a>
+				</li>
+				<li>
+					<i class="fa fa-li fa-facebook-square" title="Facebook"></i>
+					<a href="https://facebook.com/OurRevolutionNOLA">OurRevolutionNOLA</a>
+				</li>
+				<li>
+					<i class="fa fa-li fa-twitter" title="Twitter"></i>
+					<a href="https://twitter.com/OurRevNOLA">@OurRevNOLA</a>
+				</li>
+				<li>
+					<i class="fa fa-li fa-instagram" title="Instagram"></i>
+					<a href="https://instagram.com/OurRevolutionNOLA">OurRevolutionNOLA</a>
+				</li>
+			</ul>
+		</div>
+		<div class="colophon">
+			&copy; 2016-<span class="current-year">2017</span> Our Revolution NOLA. All Rights Reserved.
+		</div>
+	</body>
+	<script>
+		document.querySelector(".current-year").innerText = new Date().getFullYear();
+	</script>
+</html>
