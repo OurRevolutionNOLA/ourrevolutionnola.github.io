@@ -12,9 +12,59 @@
                 margin: 0 auto;
                 max-width: 960px;
             }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: sans-serif;
+                padding: 12px 24px;
+            }
+            /*
+            image colors:
+                #ed4246
+                #9a2d7a
+            */
+            .cta-btn {
+                background: #ed4246;
+            }
+            .cta-btn,
+            .cta-btn:hover,
+            .cta-btn:focus {
+                font-size: 36px;
+                padding: 8px 12px;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: block;
+                margin: 12px auto;
+                color: #fff;
+                border: none;
+                transition: .1s all;
+                box-shadow:
+                    0 0 0 #9a2d7a inset,
+                    0 0 0 #9a2d7a; 
+            }
+            .cta-btn:hover,
+            .cta-btn:focus {
+                background: #cc3a5b;
+                transform: translate(0, -6px);
+                box-shadow:
+                    0 0 0 #9a2d7a inset,
+                    0 6px 0 #9a2d7a;
+            }
+            .cta-btn:active {
+                background: #9a2d7a;
+                transform: translate(0, 6px);
+                box-shadow: 0 6px 12px #711e59 inset, 0 0 0 #9a2d7a;
+            }
         </style>
     </head>
     <body>
-        <div class="logo-splash"></div>
+        <div class="logo-splash" role="presentation"></div>
+        <div>
+            <a class="cta-btn" href="#">Join</a>
+            <a class="cta-btn" href="#">Build the Platform</a>
+            <a class="cta-btn" href="#">Contact Us</a>
+        </div>
     </body>
 </html>
